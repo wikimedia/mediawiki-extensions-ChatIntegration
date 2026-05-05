@@ -1,0 +1,214 @@
+{
+	"name": "ChatIntegration",
+	"version": "1.0.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:ChatIntegration",
+	"descriptionmsg": "chatintegration-desc",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"NotifyMe": ">= 2.0.0",
+			"UserProfile": ">= 1.0.0"
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ChatIntegration\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\ChatIntegration\\Tests\\": "tests/phpunit/"
+	},
+	"attributes": {
+		"ChatIntegration": {
+			"ChatClients": [
+				{
+					"class": "MediaWiki\\Extension\\ChatIntegration\\ChatClient\\MSTeams"
+				},
+				{
+					"class": "MediaWiki\\Extension\\ChatIntegration\\ChatClient\\Slack"
+				},
+				{
+					"class": "MediaWiki\\Extension\\ChatIntegration\\ChatClient\\RocketChat"
+				}
+			]
+		},
+		"BlueSpiceFoundation": {
+			"ConfigDefinitionRegistry": {
+				"MSTeamsUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\MSTeamsUrl::getInstance",
+				"SlackUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\SlackUrl::getInstance",
+				"RocketChatUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\RocketChatUrl::getInstance",
+				"ZoomUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\ZoomUrl::getInstance",
+				"GoogleMeetUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\GoogleMeetUrl::getInstance",
+				"MatrixUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\MatrixUrl::getInstance",
+				"SidebarShareMsTeams": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\SidebarShareMsTeams::getInstance"
+			}
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"msteams": {
+					"class": "MediaWiki\\Extension\\ChatIntegration\\ContentDroplets\\MSTeamsDroplet",
+					"services": [ "MainConfig" ]
+				},
+				"slack": {
+					"class": "MediaWiki\\Extension\\ChatIntegration\\ContentDroplets\\SlackDroplet",
+					"services": [ "MainConfig" ]
+				},
+				"rocketchat": {
+					"class": "MediaWiki\\Extension\\ChatIntegration\\ContentDroplets\\RocketChatDroplet",
+					"services": [ "MainConfig" ]
+				},
+				"zoom": {
+					"class": "MediaWiki\\Extension\\ChatIntegration\\ContentDroplets\\ZoomDroplet",
+					"services": [ "MainConfig" ]
+				},
+				"googlemeet": {
+					"class": "MediaWiki\\Extension\\ChatIntegration\\ContentDroplets\\GoogleMeetDroplet",
+					"services": [ "MainConfig" ]
+				},
+				"matrix": {
+					"class": "MediaWiki\\Extension\\ChatIntegration\\ContentDroplets\\MatrixDroplet",
+					"services": [ "MainConfig" ]
+				}
+			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"PluginModules": [
+				"ext.chatintegration.pastechaturl.visualEditorPlugin"
+			]
+		}
+	},
+	"callback": "mwsInitComponents",
+	"MessagesDirs": {
+		"ChatIntegration": "i18n"
+	},
+	"ResourceModules": {
+		"ext.chatIntegration.chatIcons": {
+			"styles": [
+				"ext.chatIntegration.chatIcons.css"
+			]
+		},
+		"ext.chatintegration.tag": {
+			"styles": [
+				"ext.chatintegration.tag.less"
+			]
+		},
+		"ext.chatintegration.pastechaturl.visualEditorPlugin": {
+			"packageFiles": [
+				"ext.chatintegration.vec.plugin.pastechaturl.js",
+				{
+					"name": "config.json",
+					"callback": "MediaWiki\\Extension\\ChatIntegration\\ClientConfig::makeConfigJson"
+				}
+			]
+		},
+		"ext.chatIntegration.sidebar.msTeamsShare": {
+			"styles": [
+				"ext.chatIntegration.sidebar.msTeamsShare.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "ChatIntegration/resources"
+	},
+	"Hooks": {
+		"NotifyMeRegisterChannel": "initializeChatClients",
+		"SetupAfterCache": "registerChatUsernames",
+		"BeforePageDisplay": [ "initializeChatClients", "addSidebarShareMsTeams" ],
+		"UserProfileBeforeSetProfileData": "handleChatUsernames",
+		"UserProfileGetProfileData": "handleChatUsernames",
+		"GetPreferences": "handleChatUsernames",
+		"MWStakeGenericTagHandlerInitTags": "registerTags",
+		"SidebarBeforeOutput": "addSidebarShareMsTeams",
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "addSidebarShareMsTeams",
+		"BSUsageTrackerRegisterCollectors": "MediaWiki\\Extension\\ChatIntegration\\UsageTracker\\RegisterUsageTracker::callback"
+	},
+	"HookHandlers": {
+		"initializeChatClients": {
+			"class": "MediaWiki\\Extension\\ChatIntegration\\Hooks\\InitializeChatClients",
+			"services": [
+				"ChatIntegration.BridgeClient", "ChatIntegration.ChatClientUsernameProvider", "NotifyMe.Serializer",
+				"ContentLanguage", "UserOptionsLookup", "LanguageFactory"
+			]
+		},
+		"handleChatUsernames": {
+			"class": "MediaWiki\\Extension\\ChatIntegration\\Hooks\\HandleChatUsernames",
+			"services": [
+				"UserOptionsManager", "ChatIntegration.BridgeClient"
+			]
+		},
+		"registerChatUsernames": {
+			"class": "MediaWiki\\Extension\\ChatIntegration\\Hooks\\RegisterChatUsernames",
+			"services": [
+				"ChatIntegration.BridgeClient"
+			]
+		},
+		"registerTags": {
+			"class": "MediaWiki\\Extension\\ChatIntegration\\Hooks\\RegisterTags"
+		},
+		"addSidebarShareMsTeams": {
+			"class": "MediaWiki\\Extension\\ChatIntegration\\Hooks\\AddSidebarShareMsTeams",
+			"services": [ "MainConfig" ]
+		},
+		"registerUsageTracker": {
+			"class": "MediaWiki\\Extension\\ChatIntegration\\UsageTracker\\RegisterUsageTracker"
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"config": {
+		"ChatIntegrationBridge": {
+			"value": {
+				"url": "",
+				"token": ""
+			},
+			"description": "The URL and token for the ChatIntegration bridge service."
+		},
+		"ChatIntegrationMSTeamsUrl": {
+			"value": ""
+		},
+		"ChatIntegrationSlackUrl": {
+			"value": ""
+		},
+		"ChatIntegrationRocketChatUrl": {
+			"value": ""
+		},
+		"ChatIntegrationZoomUrl": {
+			"value": ""
+		},
+		"ChatIntegrationGoogleMeetUrl": {
+			"value": ""
+		},
+		"ChatIntegrationMatrixUrl": {
+			"value": ""
+		},
+		"ChatIntegrationSidebarShareMsTeams": {
+			"value": false,
+			"description": "Whether to show the sidebar share button for MS Teams."
+		}
+	},
+	"RestRoutes": [
+		{
+			"method": "GET",
+			"path": "/chatintegration/v1/auth_info/{chat_client}/{username}",
+			"class": "MediaWiki\\Extension\\ChatIntegration\\Rest\\AuthInfoHandler",
+			"services": [ "ChatIntegration.BridgeClient", "ChatIntegration.ChatClientUsernameProvider", "MWStake.TokenAuthenticator.Authenticator" ]
+		},
+		{
+			"method": "GET",
+			"path": "/chatintegration/v1/ping",
+			"class": "MediaWiki\\Extension\\ChatIntegration\\Rest\\PingHandler",
+			"services": [ "ChatIntegration.BridgeClient" ]
+		},
+		{
+			"path": "/chatintegration/v1/localize_message/{message_key}",
+			"class": "MediaWiki\\Extension\\ChatIntegration\\Rest\\LocalizeMessageHandler",
+			"services": [ "LanguageFactory" ]
+		}
+	],
+	"manifest_version": 2,
+	"load_composer_autoloader": true
+}

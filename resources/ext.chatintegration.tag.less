@@ -1,0 +1,23 @@
+.mw-body-content a.chatintegration-tag {
+	img {
+		margin-right: 5px;
+	}
+
+	&:hover {
+		text-decoration: none;
+
+		span {
+			text-decoration: underline;
+		}
+	}
+}
+
+@integrations: msteams, slack, rocketchat, zoom, googlemeet, matrix;
+.loop(@list, @i) when (@i <= length(@list)) {
+	@integration: extract(@list, @i);
+	.droplet .icon-droplet.droplet-@{integration} {
+		background-image: ~'url( images/logos/@{integration}.svg )';
+	}
+	.loop(@list, @i + 1);
+}
+.loop(@integrations, 1);

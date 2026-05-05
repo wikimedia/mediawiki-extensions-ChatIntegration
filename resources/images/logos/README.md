@@ -1,0 +1,1 @@
+Source see https://wiki.hallowelt.com/wiki/File:ChatIcons.svg
