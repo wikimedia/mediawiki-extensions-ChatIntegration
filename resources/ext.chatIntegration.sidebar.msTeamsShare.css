@@ -1,0 +1,3 @@
+.mws-dropdown-secondary.dropdown-menu a[ target='ms-teams-share-popup' ] {
+	display: none;
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733332 67.733335"
+   version="1.1"
+   id="svg1770"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="zoom.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1772"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.72337262"
+     inkscape:cx="398.82627"
+     inkscape:cy="229.48063"
+     inkscape:window-width="3440"
+     inkscape:window-height="1364"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1767">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Greyscale"
+       id="filter1982"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 1 0 "
+         id="feColorMatrix1980" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g964"
+       transform="matrix(2.1166667,0,0,2.1166667,-110.18727,-240.50413)"
+       style="stroke-width:0.472441">
+      <g
+         id="g77548"
+         transform="translate(-10.583333,-1.4116249)"
+         style="fill:#71a5f1;fill-opacity:1;stroke-width:0.472441">
+        <rect
+           style="fill:#71a5f1;fill-opacity:1;stroke:none;stroke-width:0.874961;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="rect85574"
+           width="32"
+           height="32"
+           x="62.640308"
+           y="115.03562" />
+      </g>
+      <path
+         id="path16225-8-5-5"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.874961;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         d="m 61.930465,119.176 h 12.253028 c 4.36191,0 7.87348,3.51177 7.87348,7.87394 v 2.25928 c 0,4.36216 -3.51157,7.87394 -7.87348,7.87394 h -6.337159 l -0.0455,6.06341 -5.87037,-6.06341 c -4.361911,0 -7.873486,-3.51177 -7.873486,-7.87394 v -2.25928 c 0,-4.36217 3.511575,-7.87394 7.873487,-7.87394 z"
+         sodipodi:nodetypes="ssssscccsss" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1;stroke:none;stroke-width:0.125px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="62.989685"
+         y="134.68687"
+         id="text89201"><tspan
+           sodipodi:role="line"
+           id="tspan89199"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Lato;-inkscape-font-specification:'Lato Bold';fill:#404040;fill-opacity:1;stroke-width:0.125px"
+           x="62.989685"
+           y="134.68687">Z</tspan></text>
+    </g>
+  </g>
+</svg>
