@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
 			"Hallo Welt! GmbH https://www.hallowelt.com"
 		]
 	},
@@ -16,13 +17,13 @@
 	"chatintegration-msteams-droplet-desc": "Fügt einen Link zu einem MS Teams-Chat hinzu",
 	"chatintegration-slack-droplet-name": "Slack Link",
 	"chatintegration-slack-droplet-desc": "Fügt einen Link zu einem Slack-Chat hinzu",
-	"chatintegration-rocketchat-droplet-name": "Rocket.Chat Link",
+	"chatintegration-rocketchat-droplet-name": "Rocket.Chat-Link",
 	"chatintegration-rocketchat-droplet-desc": "Fügt einen Link zu einem Rocket.Chat-Chat hinzu",
-	"chatintegration-zoom-droplet-name": "Zoom Link",
+	"chatintegration-zoom-droplet-name": "Zoom-Link",
 	"chatintegration-zoom-droplet-desc": "Fügt einen Link zu einem Zoom-Chat hinzu",
-	"chatintegration-googlemeet-droplet-name": "Google Meet Link",
-	"chatintegration-googlemeet-droplet-desc": "Fügt einen Link zu einem Google Meet-Chat hinzu",
-	"chatintegration-matrix-droplet-name": "Matrix Link",
+	"chatintegration-googlemeet-droplet-name": "Google-Meet-Link",
+	"chatintegration-googlemeet-droplet-desc": "Fügt einen Link zu einem Google-Meet-Chat hinzu",
+	"chatintegration-matrix-droplet-name": "Matrix-Link",
 	"chatintegration-matrix-droplet-desc": "Fügt einen Link zu einem Matrix-Chat hinzu",
 	"chatintegration-inspector-msteams-title": "MS Teams Link",
 	"chatintegration-inspector-msteams-description": "Fügt einen Link zu einem MS Teams-Chat hinzu",

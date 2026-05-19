@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Siebrand"
+		]
+	},
+	"chatintegration-desc": "Integreert wiki met verschillende chatclients",
+	"chatintegration-userprofile-chatclientusername": "{{int:$1}}-gebruikersnaam",
+	"chatintegration-client-ms-teams": "MS Teams",
+	"chatintegration-client-slack": "Slack",
+	"chatintegration-client-rocket-chat": "Rocket.Chat",
+	"chatintegration-channel-label": "{{int:$1}}",
+	"chatbot-backend-message-ai-no-auth": "Geen authenticatie voor AI backend",
+	"chatbot-backend-no-search-results": "Geen resultaten gevonden",
+	"chatbot-backend-search-results-header": "Zoekresultaten voor \"$1\"",
+	"pref-chatintegration-msteams-url": "MS Teams-url",
+	"pref-chatintegration-slack-url": "Slack-url",
+	"pref-chatintegration-rocketchat-url": "Rocket.Chat-url",
+	"pref-chatintegration-zoom-url": "Zoom-url",
+	"pref-chatintegration-googlemeet-url": "Google Meet-url",
+	"pref-chatintegration-matrix-url": "Matrix-url",
+	"chatintegration-msteams-droplet-name": "MS Teams-koppeling",
+	"chatintegration-slack-droplet-name": "Slack-koppeling",
+	"chatintegration-rocketchat-droplet-name": "Rocket.Chat-koppeling",
+	"chatintegration-zoom-droplet-name": "Zoom-koppeling",
+	"chatintegration-googlemeet-droplet-name": "Google Meet-koppeling",
+	"chatintegration-matrix-droplet-name": "Matrix-koppeling",
+	"chatintegration-inspector-msteams-title": "MS Teams-koppeling",
+	"chatintegration-inspector-slack-title": "Slack-koppeling",
+	"chatintegration-inspector-rocketchat-title": "Rocket.Chat-koppeling",
+	"chatintegration-inspector-zoom-title": "Zoom-koppeling",
+	"chatintegration-inspector-googlemeet-title": "Google Meet-koppeling",
+	"chatintegration-inspector-matrix-title": "Matrix-koppeling",
+	"chatintegration-tag-attr-url-label": "Url",
+	"chatintegration-tag-attr-label-label": "Label",
+	"chatintegration-tag-attr-icon-size-label": "Pictogramgrootte",
+	"chatintegration-tag-icon-size-small": "Klein",
+	"chatintegration-tag-icon-size-medium": "Gemiddeld",
+	"chatintegration-tag-icon-size-large": "Groot",
+	"chatintegration-tag-attr-show-icon-label": "Pictogram weergeven",
+	"chatintegration-tag-attr-show-in-title-label": "Weergeven in titel",
+	"chatbot-backend-message-ai-sources-header": "Bronnen:"
+}
