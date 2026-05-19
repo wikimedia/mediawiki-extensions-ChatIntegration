@@ -38,7 +38,7 @@ class NoOfSubscribedChatNotifications extends Base {
 							array_column( $userSubscriptions['subscriptions'], 'channels' )
 						)
 					),
-					fn ( $item ) => $item === $channelName
+					static fn ( $item ) => $item === $channelName
 				)
 			);
 		}
