@@ -1,18 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hallo Welt! GmbH https://www.hallowelt.com"
+			"Hallo Welt! GmbH https://www.hallowelt.com",
+			"McDutchie"
 		]
 	},
 	"chatintegration-desc": "Description of ChatIntegration for [[Special:Version]]",
-	"chatintegration-userprofile-chatclientusername": "Label for the profile field holding the chat client username.\n$1 - message key for the client name",
+	"chatintegration-userprofile-chatclientusername": "Label for the profile field holding the chat client username.\n* $1 - message key for the client name",
 	"chatintegration-client-ms-teams": "Chat client label",
 	"chatintegration-client-slack": "Chat client label",
 	"chatintegration-client-rocket-chat": "Chat client label",
 	"chatintegration-channel-label": "Label for the NotifyMe channel for a chat client.\n$1 - message key for the client name",
 	"chatbot-backend-message-processing-error": "Message used in backend service. This message is used when an error occurs while processing a message",
-	"chatbot-backend-message-ai-streaming-error": "Message used in backend service. This message is used when an error occurs while streaming a response from the AI backend\n$1 - error message",
-	"chatbot-backend-message-ai-response-error": "Message used in backend service. This message is used when an error occurs while receiving a response from the AI backend\n$1 - error message",
+	"chatbot-backend-message-ai-streaming-error": "Message used in backend service. This message is used when an error occurs while streaming a response from the AI backend\n* $1 - error message",
+	"chatbot-backend-message-ai-response-error": "Message used in backend service. This message is used when an error occurs while receiving a response from the AI backend\n* $1 - error message",
 	"chatbot-backend-message-ai-no-auth": "Message used in backend service. This message is used when the AI backend is not authenticated",
 	"chatbot-backend-no-search-results": "Message used in backend service. This message is used when no search results are found",
 	"chatbot-backend-search-results-header": "Message used in backend service. This message is used as a header for the search results",

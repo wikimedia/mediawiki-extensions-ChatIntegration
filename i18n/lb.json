@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Volvox"
+		]
+	},
+	"chatintegration-userprofile-chatclientusername": "{{int:$1}}-Benotzernumm",
+	"chatintegration-client-ms-teams": "MS Teams",
+	"chatintegration-client-slack": "Slack",
+	"chatintegration-client-rocket-chat": "Rocket.Chat",
+	"chatbot-backend-search-results-header": "Sichresultater fir „$1“",
+	"pref-chatintegration-msteams-url": "MS-Teams-URL",
+	"pref-chatintegration-slack-url": "Slack-URL",
+	"pref-chatintegration-rocketchat-url": "Rocket.Chat-URL",
+	"pref-chatintegration-zoom-url": "Zoom-URL",
+	"pref-chatintegration-googlemeet-url": "Google-Meet-URL",
+	"pref-chatintegration-matrix-url": "Matrix-URL",
+	"chatintegration-msteams-droplet-name": "MS-Teams-Link",
+	"chatintegration-slack-droplet-name": "Slack-Link",
+	"chatintegration-rocketchat-droplet-name": "Rocket.Chat-Link",
+	"chatintegration-zoom-droplet-name": "Zoom-Link",
+	"chatintegration-googlemeet-droplet-name": "Google-Meet-Link",
+	"chatintegration-matrix-droplet-name": "Matrix-Link",
+	"chatintegration-inspector-msteams-title": "MS-Teams-Link",
+	"chatintegration-inspector-slack-title": "Slack-Link",
+	"chatintegration-inspector-rocketchat-title": "Rocket.Chat-Link",
+	"chatintegration-inspector-zoom-title": "Zoom-Link",
+	"chatintegration-inspector-googlemeet-title": "Google-Meet-Link",
+	"chatintegration-inspector-matrix-title": "Matrix-Link",
+	"chatintegration-tag-attr-url-label": "URL",
+	"chatintegration-tag-attr-icon-size-label": "Symbolgréisst",
+	"chatintegration-tag-attr-icon-size-help": "Gréisst vum Symbol festleeën",
+	"chatintegration-tag-icon-size-small": "Kleng",
+	"chatintegration-tag-icon-size-medium": "Mëttel",
+	"chatintegration-tag-icon-size-large": "Grouss",
+	"chatintegration-tag-attr-show-icon-label": "Symbol weisen",
+	"chatintegration-tag-attr-show-icon-help": "Symbol virum Textlink weisen",
+	"chatintegration-tag-attr-show-in-title-label": "Am Titel weisen"
+}
