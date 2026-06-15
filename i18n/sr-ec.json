@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"chatbot-backend-no-search-results": "Нема резултата",
+	"chatintegration-tag-attr-icon-size-label": "Величина иконе",
+	"chatintegration-tag-icon-size-small": "Мала",
+	"chatintegration-tag-icon-size-medium": "Средње",
+	"chatintegration-tag-icon-size-large": "Велика"
+}
