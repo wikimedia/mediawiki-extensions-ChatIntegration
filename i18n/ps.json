@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"chatintegration-tag-attr-icon-size-label": "انځورن کچه",
+	"chatintegration-tag-attr-icon-size-help": "د انځورن کچه ټاکل",
+	"chatintegration-tag-icon-size-small": "کوچنۍ",
+	"chatintegration-tag-icon-size-medium": "منځوي",
+	"chatintegration-tag-icon-size-large": "لويه",
+	"chatintegration-tag-attr-show-icon-label": "انځورن ښودل",
+	"chatintegration-tag-attr-show-icon-help": "له ليک تړوني دمخه انځورن ښودل",
+	"chatintegration-tag-attr-show-in-title-label": "سرليک کې ښودل",
+	"chatbot-backend-message-ai-sources-header": "سرچينې:"
+}
