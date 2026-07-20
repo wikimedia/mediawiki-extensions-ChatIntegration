@@ -36,13 +36,13 @@
 		},
 		"BlueSpiceFoundation": {
 			"ConfigDefinitionRegistry": {
-				"MSTeamsUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\MSTeamsUrl::getInstance",
-				"SlackUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\SlackUrl::getInstance",
-				"RocketChatUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\RocketChatUrl::getInstance",
-				"ZoomUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\ZoomUrl::getInstance",
-				"GoogleMeetUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\GoogleMeetUrl::getInstance",
-				"MatrixUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\MatrixUrl::getInstance",
-				"SidebarShareMsTeams": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\SidebarShareMsTeams::getInstance"
+				"ChatIntegrationMSTeamsUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\MSTeamsUrl::getInstance",
+				"ChatIntegrationSlackUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\SlackUrl::getInstance",
+				"ChatIntegrationRocketChatUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\RocketChatUrl::getInstance",
+				"ChatIntegrationZoomUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\ZoomUrl::getInstance",
+				"ChatIntegrationGoogleMeetUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\GoogleMeetUrl::getInstance",
+				"ChatIntegrationMatrixUrl": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\IntegrationUrls\\MatrixUrl::getInstance",
+				"ChatIntegrationSidebarShareMsTeams": "MediaWiki\\Extension\\ChatIntegration\\ConfigDefinition\\SidebarShareMsTeams::getInstance"
 			}
 		},
 		"ContentDroplets": {
