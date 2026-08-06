@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\ChatIntegration\Bridge;
 
-use Config;
 use Exception;
+use MediaWiki\Config\Config;
 use MediaWiki\Extension\ChatIntegration\IChatClient;
 use MediaWiki\Http\HttpRequestFactory;
 use Psr\Log\LoggerInterface;
