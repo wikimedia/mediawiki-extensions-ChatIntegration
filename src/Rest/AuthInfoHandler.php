@@ -64,6 +64,9 @@ class AuthInfoHandler extends SimpleHandler {
 		];
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	public function needsReadAccess() {
 		return true;
 	}

@@ -33,7 +33,6 @@ class SidebarShareMsTeams extends BooleanSetting implements IOverwriteGlobal {
 	}
 
 	/**
-	 *
 	 * @return string|null
 	 */
 	public function getHelpMessageKey() {
