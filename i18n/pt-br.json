@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"chatintegration-client-ms-teams": "MS Teams",
+	"chatintegration-client-slack": "Slack",
+	"chatintegration-client-rocket-chat": "Rocket.Chat",
+	"chatintegration-channel-label": "{{int:$1}}",
+	"chatintegration-tag-attr-label-label": "Etiqueta",
+	"chatintegration-tag-icon-size-small": "Pequeno",
+	"chatintegration-tag-icon-size-medium": "Médio",
+	"chatintegration-tag-icon-size-large": "Grande",
+	"chatbot-backend-message-ai-sources-header": "Fontes:"
+}
